@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home page</title>
+    <style>
+     h1{
+        color: rgb(133, 154, 181);
+        text-align: center;
+        }
+      
+     .center {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);}
+
+      </style>
+     
+</head>
+  <body>
+    <h1>home</h1><hr><hr>
+    <p style="text-align: center;color: aqua;">PLEASE CLICK THE LOGIN</p>
+    
+    <div class="center">
+    <button type="button" ><a href="{% url 'login' %}">LOGIN</a></button>
+    </div>
+  </body>
+</html>

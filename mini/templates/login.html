@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home page</title>
+    {% for message in messages %}
+    <div class="message {{ message.tags }}">
+        {{ message }}
+    </div>
+    {% endfor %}
+    <style>
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);}
+        .ral {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);}
+    </style>
+    
+  </head>
+  <body>
+    <h1 style="color: blue;text-align: center;">LOGIN HERE</h1><hr><hr>
+    <div class="center">
+    <form action="" method="post">{% csrf_token %} 
+        <label>USERNAME:</label>
+        <input type="text" name="username" placeholder="enater_username" id="username" required><br><br>
+        
+        <label>PASSWORD:</label>
+        <input type="password" name="password" placeholder="enater_password" id="password" required><br><br>
+    </div>
+    <div class="ral">
+        <button type="submit">LOGIN</button>
+    </div>
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>create new user</title>
+    <style>
+      .middle {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+        .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2 style="color: blueviolet;text-align: center;">CREATE NEW USER</h2><hr><hr>
+    <div class="middle">
+    <form action="" method="post">{% csrf_token %} 
+        <label>USERNAME:</label>
+        <input type="text" name="username" placeholder="enater_username" id="username" required><br><br>
+        <label>EMAIL ADD:  </label>
+        <input type="email" name="email" placeholder="enater_email" id="email" required><br><br>
+        <label>PASSWORD:</label>
+        <input type="password" name="password" placeholder="enater_password" id="password" required><br><br>
+    </div>
+    <div class="center">
+        <button type="submit">register</button>
+    </div>
+
+    </form>
+
+    
+
+    
+    
+  </body>
+</html>
