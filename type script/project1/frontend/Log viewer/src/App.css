@@ -1,0 +1,23 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.log-viewer {
+  width: 80%;
+  max-width: 800px;
+}
+
+.sidebar {
+  /* Add styles for the sidebar */
+}
+
+.pagination {
+  /* Add styles for pagination */
+}
+
+.search-bar {
+  /* Add styles for search bar */
+}
